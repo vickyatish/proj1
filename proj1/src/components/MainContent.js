@@ -6,17 +6,17 @@ import UnmarkedWalkway from './UnmarkedWalkway';
 import Bibliography from './Bibliography';
 import Quiz from './Quiz';
 
-const MainContent = ({ content }) => {
+const MainContent = ({ content, highlightedCitation, onCitationClick, onContentChange }) => {
   const renderContent = () => {
     switch (content) {
       case 'Introduction':
-        return <Introduction />;
+        return <Introduction onContentChange={onContentChange} />;
       case 'Walkway Quality':
-        return <WalkwayQuality />;
+        return <WalkwayQuality onCitationClick={onCitationClick} />;
       case 'Unmarked Walkway':
         return <UnmarkedWalkway />;
       case 'Bibliography':
-        return <Bibliography />;
+        return <Bibliography highlightedCitation={highlightedCitation} />;
       case 'Quiz':
         return <Quiz />;
       default:
@@ -26,7 +26,6 @@ const MainContent = ({ content }) => {
 
   return (
     <div className="main-content">
-      <h1>{content}</h1>
       {renderContent()}
     </div>
   );

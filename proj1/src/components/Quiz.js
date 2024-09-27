@@ -13,6 +13,21 @@ const Quiz = () => {
       options: ['To improve aesthetics', 'To assist navigation', 'To reduce costs', 'To enhance speed'],
       answer: 'To assist navigation',
     },
+    {
+        question: 'What is the primary goal of curb detection?',
+        options: ['To improve aesthetics', 'To assist navigation', 'To reduce costs', 'To enhance speed'],
+        answer: 'To assist navigation',
+    },
+    {
+        question: 'What is the primary goal of curb detection?',
+        options: ['To improve aesthetics', 'To assist navigation', 'To reduce costs', 'To enhance speed'],
+        answer: 'To assist navigation',
+    },
+    {
+        question: 'What is the primary goal of curb detection?',
+        options: ['To improve aesthetics', 'To assist navigation', 'To reduce costs', 'To enhance speed'],
+        answer: 'To assist navigation',
+    }
     // Add more questions as needed
   ];
 

@@ -1,3 +1,4 @@
+/* Existing styles */
 .bibliography {
     padding: 20px;
     background-color: #ffffff;
@@ -14,8 +15,17 @@
     padding-left: 20px;
   }
   
-  .bibliography li {
+  .bibliography-item {
     margin-bottom: 10px;
     font-size: 1.1em;
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* New styles for highlighted bibliography item */
+  .bibliography-item.highlighted {
+    background-color: yellow;
+    color: black;
+    border-radius: 4px;
+    padding: 2px 4px;
   }

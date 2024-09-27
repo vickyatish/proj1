@@ -1,11 +1,32 @@
+/* src/App.css */
+
 .app {
-  display: flex;
-  height: 100vh; /* Full viewport height */
-  position: relative; /* To position navigation buttons absolutely within the app */
+  display: flex; /* Enables Flexbox layout */
+  height: 100vh; /* Sets the height to fill the viewport */
+  width: 100%; /* Ensures the app takes full width */
+  box-sizing: border-box;
 }
 
+/* Sidebar Styling */
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  min-width: 200px; /* Ensures a minimum width */
+  background-color: #f0f0f0; /* Sidebar background color */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1; /* Allows MainContent to grow and fill remaining space */
+  padding: 20px; /* Adds padding around the content */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+  background-color: #ffffff; /* Main content background color */
+  box-sizing: border-box;
+}
+
+/* Navigation Buttons Styling */
 .navigation-buttons {
-  position: fixed;
+  position: fixed; /* Fixes the buttons at the bottom */
   bottom: 20px;
   right: 20px;
   display: flex;
@@ -13,18 +34,15 @@
 }
 
 .nav-button {
-  padding: 8px 12px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  padding: 10px 20px;
+  background-color: #3399ff;
+  color: #ffffff;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-  background-color: #e7e7e7;
-}
-
-.nav-button:focus {
-  outline: none;
+  background-color: #287acc;
 }

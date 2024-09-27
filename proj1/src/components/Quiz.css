@@ -1,14 +1,18 @@
 /* src/components/Quiz.css */
 
 .quiz {
+    width: 100%; /* Ensures the component takes full width */
     padding: 20px;
     background-color: #ffffff;
     color: #333333;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
   }
   
   .quiz h2 {
     color: #555555;
     margin-bottom: 20px;
+    font-size: 2em;
   }
   
   .score-section {
@@ -79,4 +83,16 @@
   
   .next-button:hover {
     background-color: #287acc;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 650px) {
+    .quiz {
+      padding: 10px;
+    }
+  
+    .option-button, .next-button {
+      width: 100%; /* Make buttons take full width on small screens */
+      text-align: center;
+    }
   }

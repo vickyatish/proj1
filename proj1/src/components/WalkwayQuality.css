@@ -1,5 +1,4 @@
-/* src/components/WalkwayQuality.css */
-
+/* Existing styles */
 .walkway-quality {
     padding: 20px;
     background-color: #ffffff;
@@ -17,25 +16,22 @@
     margin-bottom: 20px;
   }
   
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
+  /* New styles for citation buttons */
+  .citation-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    text-decoration: underline;
   }
   
-  .card {
-    background-color: #f9f9f9;
-    border: 1px solid #e7e7e7;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px; /* Adjust as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .citation-button:hover {
+    color: darkblue;
   }
   
-  .card-image {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: auto;
+  .citation-button:focus {
+    outline: none;
+    color: darkblue;
   }

@@ -1,5 +1,3 @@
-// src/components/Introduction.js
-
 import React from 'react';
 import './Introduction.css'; // Ensure this CSS file exists
 
@@ -8,12 +6,12 @@ const Introduction = ({ onContentChange }) => {
     <div className="introduction">
       <h2>Using Computer Vision to Enhance Walkway Accessibility for the Visually Impaired</h2>
       <p>
-        This tutorial explores two of the most common challenges visually impaired individuals face with walkways and introduces our proposed computer vision solutions.
+        This tutorial explores the challenges visually impaired individuals face with walkways and introduces our proposed computer vision solutions.
       </p>
 
       <div className="cards-container">
         <div className="card" onClick={() => onContentChange('Walkway Quality')}>
-          <h3>1. Assessing Walkways Quality (Normal/Damaged)</h3>
+          <h3>Assessing Walkways Quality (Normal/Damaged)</h3>
           <img
             src="https://i.postimg.cc/nVsSTGzy/temp-Image-Ykyb-SQ.avif"
             alt="Assessing Walkways Quality"
@@ -24,8 +22,8 @@ const Introduction = ({ onContentChange }) => {
           </p>
         </div>
 
-        <div className="card" onClick={() => onContentChange('Unmarked walkway')}>
-          <h3>2. Curb Detection or Navigation in Unmarked Environments</h3>
+        <div className="card" onClick={() => onContentChange('Unmarked Walkway')}>
+          <h3>Curb Detection or Navigation in Unmarked Environments</h3>
           <img
             src="https://i.postimg.cc/bw6MgQWW/temp-Imagecg-YYBZ.avif"
             alt="Curb Detection"
