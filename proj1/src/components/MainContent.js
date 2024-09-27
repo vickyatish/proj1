@@ -2,19 +2,21 @@
 
 import React from 'react';
 import './MainContent.css';
-import Introduction from './Introduction'; // Import the Introduction component
+import Introduction from './Introduction'; // Ensure this path is correct
 
-const MainContent = ({ content }) => {
+const MainContent = ({ content, onContentChange }) => {
   const renderContent = () => {
     switch (content) {
       case 'Introduction':
-        return <Introduction />;
-      case 'About':
-        return <p>Learn more About us here.</p>;
-      case 'Services':
-        return <p>These are our Services.</p>;
-      case 'Contact':
-        return <p>Get in touch with us on the Contact page.</p>;
+        return <Introduction onContentChange={onContentChange} />;
+      case 'Walkway Quality':
+        return <p>Walkway Quality</p>;
+      case 'Unmarked walkway':
+        return <p>Unmarked walkway</p>;
+      case 'Bibliography':
+        return <p>Bibliography</p>;
+      case 'quiz':
+        return <p>quiz</p>;
       default:
         return <p>Select a menu item.</p>;
     }

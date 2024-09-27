@@ -25,15 +25,16 @@
     justify-content: flex-start; /* Left justified */
   }
   
-  /* Individual card styling */
+  /* Card styling */
   .card {
     background-color: #f9f9f9;
     border: 1px solid #e7e7e7;
     border-radius: 8px;
     padding: 20px;
-    width: 300px; /* Fixed width for consistency */
+    width: 500px; /* Adjust as needed */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Indicates the card is clickable */
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .card:hover {
@@ -44,18 +45,16 @@
   .card h3 {
     margin-top: 0;
     color: #333333;
-    margin-bottom: 15px;
   }
   
   .card-image {
-    width: 100%;
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
     height: auto;
-    border-radius: 4px;
-    margin-bottom: 15px;
   }
   
   .card p {
-    margin: 0;
     color: #555555;
     font-size: 1em;
     line-height: 1.5;

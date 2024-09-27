@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 
 const Sidebar = ({ onContentChange, activeContent }) => {
-  const contents = ['Introduction', 'About', 'Services', 'Contact'];
+  const contents = ['Introduction', 'Walkway Quality', 'Unmarked walkway', 'Bibliography', 'Quiz'];
 
   return (
     <div className="sidebar">
