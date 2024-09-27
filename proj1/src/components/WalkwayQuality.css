@@ -1,0 +1,41 @@
+/* src/components/WalkwayQuality.css */
+
+.walkway-quality {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .walkway-quality h2 {
+    color: #555555;
+    margin-bottom: 20px;
+  }
+  
+  .walkway-quality p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+  }

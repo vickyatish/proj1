@@ -1,22 +1,24 @@
-// src/components/MainContent.js
-
 import React from 'react';
 import './MainContent.css';
-import Introduction from './Introduction'; // Ensure this path is correct
+import Introduction from './Introduction';
+import WalkwayQuality from './WalkwayQuality';
+import UnmarkedWalkway from './UnmarkedWalkway';
+import Bibliography from './Bibliography';
+import Quiz from './Quiz';
 
-const MainContent = ({ content, onContentChange }) => {
+const MainContent = ({ content }) => {
   const renderContent = () => {
     switch (content) {
       case 'Introduction':
-        return <Introduction onContentChange={onContentChange} />;
+        return <Introduction />;
       case 'Walkway Quality':
-        return <p>Walkway Quality</p>;
-      case 'Unmarked walkway':
-        return <p>Unmarked walkway</p>;
+        return <WalkwayQuality />;
+      case 'Unmarked Walkway':
+        return <UnmarkedWalkway />;
       case 'Bibliography':
-        return <p>Bibliography</p>;
-      case 'quiz':
-        return <p>quiz</p>;
+        return <Bibliography />;
+      case 'Quiz':
+        return <Quiz />;
       default:
         return <p>Select a menu item.</p>;
     }

@@ -1,12 +1,10 @@
-// src/App.js
-
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import './App.css';
 
 function App() {
-  const contents = ['Introduction', 'Walkway Quality', 'Unmarked walkway', 'Bibliography', 'Quiz'];
+  const contents = ['Introduction', 'Walkway Quality', 'Unmarked Walkway', 'Bibliography', 'Quiz'];
   const [activeContent, setActiveContent] = useState('Introduction');
 
   const handleContentChange = (content) => {
@@ -28,7 +26,7 @@ function App() {
   return (
     <div className="app">
       <Sidebar onContentChange={handleContentChange} activeContent={activeContent} />
-      <MainContent content={activeContent} onContentChange={handleContentChange} />
+      <MainContent content={activeContent} />
       <div className="navigation-buttons">
         <button onClick={handlePrevious} className="nav-button">Previous</button>
         <button onClick={handleNext} className="nav-button">Next</button>
