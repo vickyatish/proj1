@@ -1,11 +1,14 @@
+// src/components/MainContent.js
+
 import React from 'react';
 import './MainContent.css';
+import Introduction from './Introduction'; // Import the Introduction component
 
 const MainContent = ({ content }) => {
   const renderContent = () => {
     switch (content) {
-      case 'Home':
-        return <p>Welcome to the Home page!</p>;
+      case 'Introduction':
+        return <Introduction />;
       case 'About':
         return <p>Learn more About us here.</p>;
       case 'Services':
