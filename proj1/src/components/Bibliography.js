@@ -12,7 +12,9 @@ const Bibliography = ({ highlightedCitation }) => {
     { number: 7, text: 'Mandal, Vishal & Uong, Lan & Adu-Gyamfi, Yaw. (2018). Automated Road Crack Detection Using Deep Convolutional Neural Networks. 5212-5215. 10.1109/BigData.2018.8622327. ' },
     { number: 8, text: 'C. Y. Koh, M. Ali and A. Hendawi, "CrackLens: Automated Sidewalk Crack Detection and Segmentation," in IEEE Transactions on Artificial Intelligence, doi: 10.1109/TAI.2024.3435608' },
     { number: 9, text: 'H. Yuan et al., "Monocular Road Planar Parallax Estimation," in IEEE Transactions on Image Processing, vol. 32, pp. 3690-3701, 2023, doi: 10.1109/TIP.2023.3289323.' },
-    { number: 10, text: 'Yuhan Jiang, Sisi Han, Dapeng Li, Yong Bai, Mingzhu Wang,Automatic concrete sidewalk deficiency detection and mapping with deep learning,Expert Systems with Applications,Volume 207,2022,117980,ISSN 0957-4174, doi.org/10.1016/j.eswa.2022.117980.'}
+    { number: 10, text: 'Yuhan Jiang, Sisi Han, Dapeng Li, Yong Bai, Mingzhu Wang,Automatic concrete sidewalk deficiency detection and mapping with deep learning,Expert Systems with Applications,Volume 207,2022,117980,ISSN 0957-4174, doi.org/10.1016/j.eswa.2022.117980.'},
+    { number: 11, text: '2015 International Conference on Control, Automation and Information Sciences (ICCAIS) October 29-31, 2015, Changshu, China Real Time Road Edges Detection And Road Signs Recognition'},
+    { number: 12, text: 'Xiangdong Wang, Yunfei Cai and Tingmin Shi, "Road edge detection based on improved RANSAC and 2D LIDAR Data," 2015 International Conference on Control, Automation and Information Sciences (ICCAIS), Changshu, 2015, pp. 191-196, doi: 10.1109/ICCAIS.2015.7338660.'}
   ];
 
   return (

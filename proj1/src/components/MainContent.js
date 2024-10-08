@@ -1,5 +1,5 @@
+// MainContent.js
 import React from 'react';
-import './MainContent.css';
 import Introduction from './Introduction';
 import WalkwayQuality from './WalkwayQuality';
 import UnmarkedWalkway from './UnmarkedWalkway';
@@ -10,17 +10,17 @@ const MainContent = ({ content, highlightedCitation, onCitationClick, onContentC
   const renderContent = () => {
     switch (content) {
       case 'Introduction':
-        return <Introduction onContentChange={onContentChange} />;
+        return <Introduction />;
       case 'Walkway Quality':
-        return <WalkwayQuality onCitationClick={onCitationClick} />;
+        return <WalkwayQuality />;
       case 'Unmarked Walkway':
-        return <UnmarkedWalkway />;
+        return <UnmarkedWalkway onCitationClick={onCitationClick} />;
       case 'Bibliography':
         return <Bibliography highlightedCitation={highlightedCitation} />;
       case 'Quiz':
         return <Quiz />;
       default:
-        return <p>Select a menu item.</p>;
+        return <Introduction />;
     }
   };
 
